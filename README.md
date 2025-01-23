@@ -1,0 +1,2 @@
+# horoscopeai
+new ai version
