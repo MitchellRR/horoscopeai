@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscope Results</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <!-- AdSense Ads -->
+    <div class="adsense-top">Your ad here</div>
+    <div class="adsense-bottom">Your ad here</div>
+    <div class="adsense-left">Your ad here</div>
+    <div class="adsense-right">Your ad here</div>
+
+    <!-- Content -->
+    <div class="container">
+        <h1>Your Personalized Horoscope</h1>
+        <p>{{ horoscope }}</p>
+
+        <!-- Centered Instagram Share Button -->
+        <div class="button-container">
+            <button onclick="shareOnInstagram()">Share on Instagram</button>
+        </div>
+    </div>
+
+    <script>
+        function shareOnInstagram() {
+            alert("Instagram does not support direct sharing via links. Please copy and paste the link manually.");
+        }
+    </script>
+</body>
+</html>

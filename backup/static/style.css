@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center everything */
+    align-items: flex-start; /* Align at the top */
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    position: relative;
+}
+
+/* Main Container */
+.container {
+    margin: 100px auto; /* Center vertically and horizontally */
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px; /* Limit maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside */
+    text-align: center; /* Center-align text for headings */
+    position: relative;
+    z-index: 1; /* Ensure it's above other content */
+}
+
+/* Form Styling */
+form {
+    width: 100%; /* Take full width of the container */
+    max-width: 600px; /* Ensure the form stays compact */
+    text-align: left; /* Align form text left for readability */
+}
+
+/* Ad Styles */
+.adsense-top,
+.adsense-bottom,
+.adsense-left,
+.adsense-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fixed positioning for ads */
+    background-color: #e0e0e0;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keep ads above everything else */
+}
+
+/* Top and Bottom Ads */
+.adsense-top {
+    top: 10px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.adsense-bottom {
+    bottom: 10px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Left and Right Ads */
+.adsense-left {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 300px;
+    text-align: center;
+}
+
+.adsense-right {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 300px;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .adsense-left,
+    .adsense-right {
+        display: none; /* Hide side ads on smaller screens */
+    }
+
+    .container {
+        width: 90%; /* Allow more flexibility on smaller screens */
+        margin: 20px; /* Reduce margin for smaller devices */
+    }
+}

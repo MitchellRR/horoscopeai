@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscope Results</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <!-- Top Ad -->
+    <div class="adsense-top">
+        <p>Your ad here (Top Ad Space)</p>
+    </div>
+
+    <!-- Left Ad -->
+    <div class="adsense-left">
+        <p>Your ad here (Left Ad Space)</p>
+    </div>
+
+    <!-- Right Ad -->
+    <div class="adsense-right">
+        <p>Your ad here (Right Ad Space)</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Your Personalized Horoscope</h1>
+        <div class="result-box">
+            <p>{{ horoscope }}</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="btn" onclick="copyToClipboard()">Copy Horoscope</button>
+            <button class="btn" onclick="location.href='/'">Generate Another Horoscope</button>
+        </div>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="adsense-bottom">
+        <p>Your ad here (Bottom Ad Space)</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function copyToClipboard() {
+            const horoscopeText = document.querySelector('.result-box p').textContent;
+            navigator.clipboard.writeText(horoscopeText)
+                .then(() => alert('Horoscope copied to clipboard!'))
+                .catch(err => alert('Failed to copy: ' + err));
+        }
+    </script>
+</body>
+</html>

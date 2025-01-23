@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Horoscope</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <!-- Top Ad -->
+    <div class="adsense-top">
+        <p>Your ad here (Top Ad Space)</p>
+    </div>
+
+    <!-- Left Ad -->
+    <div class="adsense-left">
+        <p>Your ad here (Left Ad Space)</p>
+    </div>
+
+    <!-- Right Ad -->
+    <div class="adsense-right">
+        <p>Your ad here (Right Ad Space)</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to the AI Horoscope Generator</h1>
+        <form action="/get-horoscope" method="post">
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br>
+                <label for="time">Time of Birth (optional):</label>
+                <input type="time" id="time" name="time"><br>
+                <label for="place">Place of Birth (optional):</label>
+                <input type="text" id="place" name="place"><br>
+            </fieldset>
+
+            <!-- Mood and Focus -->
+            <fieldset>
+                <legend>Mood and Focus</legend>
+                <label for="mood">Mood:</label>
+                <input type="text" id="mood" name="mood" required><br>
+                <label for="focus_area">Focus Area:</label>
+                <select id="focus_area" name="focus_area">
+                    <option value="love">Love</option>
+                    <option value="career">Career</option>
+                    <option value="health">Health</option>
+                    <option value="finances">Finances</option>
+                </select><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Get Horoscope</button>
+        </form>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="adsense-bottom">
+        <p>Your ad here (Bottom Ad Space)</p>
+    </div>
+</body>
+</html>

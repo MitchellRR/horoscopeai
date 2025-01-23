@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Horoscope</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <!-- Top Ad -->
+    <div class="adsense-top">
+        <p>Your ad here (Top Ad Space)</p>
+    </div>
+
+    <!-- Left Ad -->
+    <div class="adsense-left">
+        <p>Your ad here (Left Ad Space)</p>
+    </div>
+
+    <!-- Right Ad -->
+    <div class="adsense-right">
+        <p>Your ad here (Right Ad Space)</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to the AI Horoscope Generator</h1>
+        <form action="/get-horoscope" method="post">
+            <h2>Personal Details:</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="time">Time of Birth (optional):</label>
+            <input type="time" id="time" name="time"><br>
+
+            <label for="place">Place of Birth (optional):</label>
+            <input type="text" id="place" name="place"><br>
+
+            <label for="gender">Gender/Pronouns (optional):</label>
+            <input type="text" id="gender" name="gender"><br>
+
+            <h2>Current Context:</h2>
+            <label for="mood">Mood or Emotional State:</label>
+            <input type="text" id="mood" name="mood" required><br>
+
+            <label for="current_location">Current Location (optional):</label>
+            <input type="text" id="current_location" name="current_location"><br>
+
+            <h2>Preferences:</h2>
+            <div class="side-by-side">
+                <div>
+                    <label for="focus_area">Focus Area for Horoscope:</label>
+                    <select id="focus_area" name="focus_area">
+                        <option value="love">Love</option>
+                        <option value="career">Career</option>
+                        <option value="health">Health</option>
+                        <option value="finances">Finances</option>
+                    </select><br>
+                </div>
+                <div>
+                    <label for="detail_level">Level of Detail:</label>
+                    <select id="detail_level" name="detail_level">
+                        <option value="brief">Brief Overview</option>
+                        <option value="detailed">Detailed Reading</option>
+                    </select><br>
+                </div>
+            </div>
+
+            <h2>Optional Add-ons:</h2>
+            <label for="interests">Astrological Interests (e.g., Western astrology, Chinese zodiac):</label>
+            <input type="text" id="interests" name="interests"><br>
+
+            <label for="special_events">Special Events/Upcoming Dates:</label>
+            <input type="text" id="special_events" name="special_events"><br>
+
+            <button type="submit">Get Horoscope</button>
+        </form>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="adsense-bottom">
+        <p>Your ad here (Bottom Ad Space)</p>
+    </div>
+</body>
+</html>
